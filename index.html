@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Room Design</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-camera position="0 5 15"></a-camera>
+        <!-- Sky  -->
+        <a-sky src="assets/sky.jpg"></a-sky>
+
+        <!-- Ground  -->
+        <a-plane src="assets/ground.jpg" position="0 0 0" rotation="-90 0 0" width="17" height="10"></a-plane>
+
+        <!-- Wall -->
+        <a-plane src="assets/wall.jpg" position="0 6.5 -4.5" width="17" height="14"> </a-plane>
+
+        <!-- Posters -->
+        <a-plane id="wall-poster-left"
+            src="assets/poster.png"
+            position="-5 6 -3.3" rotation="0 0 0" width="4" height="6"></a-plane>
+
+        <a-plane id="wall-poster-middle"
+            src="assets/poster.png"
+            position="0 6 -3.3" rotation="0 0 0" width="4" height="6"></a-plane>
+
+        <a-plane id="wall-poster-right"
+            src="assets/poster.png"
+            position="5 6 -3.3" rotation="0 0 0" width="4" height="6"></a-plane>
+
+    </a-scene>
+</body>
+
+</html>
